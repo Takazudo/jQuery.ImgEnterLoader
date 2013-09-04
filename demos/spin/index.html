@@ -1,0 +1,162 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width">
+<script src="../../EveEve/eveeve.js"></script>
+<script src="../../libs/jquery/1.5.1/jquery.js"></script>
+<script src="../../libs/spin.js"></script>
+<script src="../../jquery.imgenterloader.js"></script>
+<style>
+body {
+	font-size: 12px;
+}
+h1 {
+	font-size:1.2em;
+	text-align:center;
+}
+.imgdiv {
+	width:160px;
+	height:160px;
+	background:#ddd;
+	margin:0 auto 20px;
+}
+	.imgdiv img {
+		display:block;
+		width:100%;
+		height:100%;
+	}
+</style>
+<script>
+$(function() {
+
+	$('.apply-enterload').imgEnterLoad({
+		enter: function($container) {
+			var spinnerOptions = {
+				color: '#333',
+				lines: 10,
+				length: 10,
+				width: 2,
+				radius: 10
+			};
+			(new Spinner(spinnerOptions)).spin($container[0]);
+		},
+		imgload: function($container, $img) {
+			$container.empty();
+			$img.hide();
+			$container.append($img);
+			$img.fadeIn();
+		}
+	});
+
+});
+</script>
+</head>
+<body>
+
+<h1>jQuery.ImgEnterLoader</h1>
+
+<div class="imgdiv apply-enterload" data-enterload="../imgs/1.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/2.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/3.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/4.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/5.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/6.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/7.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/8.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/9.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/10.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/11.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/12.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/13.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/14.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/15.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/16.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/17.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/18.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/19.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/20.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/21.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/22.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/23.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/24.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/25.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/26.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/27.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/28.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/29.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/30.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/31.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/32.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/33.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/34.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/35.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/36.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/37.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/38.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/39.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/40.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/41.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/42.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/43.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/44.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/45.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/46.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/47.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/48.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/49.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/50.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/51.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/52.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/53.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/54.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/55.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/56.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/57.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/58.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/59.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/60.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/61.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/62.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/63.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/64.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/65.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/66.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/67.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/68.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/69.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/70.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/71.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/72.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/73.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/74.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/75.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/76.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/77.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/78.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/79.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/80.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/81.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/82.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/83.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/84.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/85.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/86.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/87.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/88.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/89.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/90.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/91.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/92.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/93.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/94.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/95.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/96.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/97.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/98.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/99.jpg"></div>
+<div class="imgdiv apply-enterload" data-enterload="../imgs/100.jpg"></div>
+
+</body>
+</html>
