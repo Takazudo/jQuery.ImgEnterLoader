@@ -34,10 +34,10 @@ do ($ = jQuery) ->
     img = new Image
     cleanUp = -> img.onload = img.onerror = null
     img.onload = ->
-      cleanUp
+      cleanUp()
       defer.resolve img
     img.onerror = ->
-      cleanUp
+      cleanUp()
       defer.reject img
     img.src = src
     return defer.promise()

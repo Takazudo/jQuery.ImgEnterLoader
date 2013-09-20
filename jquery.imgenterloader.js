@@ -1,5 +1,5 @@
 /*! jQuery.ImgEnterLoader (https://github.com/Takazudo/jQuery.ImgEnterLoader)
- * lastupdate: 2013-09-04
+ * lastupdate: 2013-09-20
  * version: 0.1.0
  * author: 'Takazudo' Takeshi Takatsudo <takazudo@gmail.com>
  * License: MIT */
@@ -45,10 +45,12 @@
         return img.onload = img.onerror = null;
       };
       img.onload = function() {
-        cleanUp;        return defer.resolve(img);
+        cleanUp();
+        return defer.resolve(img);
       };
       img.onerror = function() {
-        cleanUp;        return defer.reject(img);
+        cleanUp();
+        return defer.reject(img);
       };
       img.src = src;
       return defer.promise();
